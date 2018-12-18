@@ -17,9 +17,4 @@
 
  }
 
- static void get_start(const char* source, int *begin){
-
- }
- static void get_end(const char* source, int *end, int *begin){
-
  }
