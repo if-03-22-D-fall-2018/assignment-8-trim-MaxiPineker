@@ -13,8 +13,19 @@
 #include "trim.h"
 #include <string.h>
 
- void trim(const char *source, char *trimmed_string){
+void get_min_length(const char *source, int *min);
+void get_max_length(const char *source, int *min, int *max);
 
- }
+ void trim(const char *source, char *trimmed_string){
+   int min = 0;
+   int max = strlen(source-1);
+
+   get_min_length(source, &min);
+   get_max_length(source, &min, &max);
+
+   if (strlen(source) == 0) {
+     strcpy(trimmed_string, "");
+     return;
+   }
 
  }
