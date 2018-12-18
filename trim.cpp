@@ -25,7 +25,6 @@ void get_max_length(const char *source, int *min, int *max);
 
    if (strlen(source) == 0) {
      strcpy(trimmed_string, "");
-     return;
    }
 
  }
@@ -36,7 +35,10 @@ void get_max_length(const char *source, int *min, int *max);
      *min = *min + 1;
    }
  }
+
  void get_max_length(const char *source, int *min, int *max)
  {
-
+   while (*max >= *min && source[*max] == ' ') {
+     *max = *max -1;
+   }
  }
