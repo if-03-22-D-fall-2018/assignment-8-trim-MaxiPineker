@@ -29,3 +29,14 @@ void get_max_length(const char *source, int *min, int *max);
    }
 
  }
+
+ void get_min_length(const char *source, int *min)
+ {
+   while (source[*min] == ' '){
+     *min = *min + 1;
+   }
+ }
+ void get_max_length(const char *source, int *min, int *max)
+ {
+
+ }
