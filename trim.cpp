@@ -25,7 +25,6 @@
 
    if (strlen(source) == 0) {
      strcpy(trimmed_string, "");
-     return;
    }
 
    int count =0;
@@ -38,7 +37,7 @@
  void get_min_length(const char *source, int *min)
  {
    while (source[*min] == ' '){
-     *min = *min + 1;
+     *min += 1;
    }
  }
 
